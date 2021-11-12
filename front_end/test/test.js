@@ -22,15 +22,14 @@ function getImages(){
             data.results.forEach(hotel => {
                 html += `
                     <div class="hotel-item" id = ${hotel.id}>
-                        <img src="${hotel.urls.thumb}" alt="hotel">
+                        <img  src="${hotel.urls.thumb}" alt="hotel">
                     </div>
                 `
             });
         }
-
         hotel.innerHTML = html;
+        return data;
     });
 }
 
-
-
+export default getImages;
