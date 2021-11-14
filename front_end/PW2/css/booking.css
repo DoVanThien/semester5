@@ -42,7 +42,7 @@ ul {
     list-style: none; /*set all the list stype properties */
 }
 
-main {
+section {
     padding: 2.5rem 0;
 }
 
@@ -157,9 +157,53 @@ main {
 }
 
 
+/* Booking section styles */
+.booking{
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    background-color: white;
+    /* border-bottom: solid grey 0.5px; */
+}
+
+.input-group{
+    margin-bottom: 1.5rem;
+}
+
+.input-label{
+    display: block;
+    font-size: 1.4rem;
+    color: #1a1919;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.input, .options{
+    outline: none;
+    border: solid rgb(194, 194, 194) .5px;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 4rem;
+    padding: 1rem;
+    font-weight: bold;
+    color: #a5a5a5;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none;
+}
+.btn-search{
+    background-color: black;
+    cursor: pointer;
+    padding: 1.5rem;
+}
+.btn-search:hover, .fa-search:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 20px rgba(33,33,33,.2);
+}
+
 /* Featured hotels - styles */
 .hotels{
-    margin-top: 7rem;
+    margin-top: 2rem;
 }
 
 .grid{
@@ -168,15 +212,15 @@ main {
     grid-gap: 1.5rem;
 }
 
-.list-options{
+/* .list-options{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     border-bottom: rgb(175, 175, 175) solid .5px;
-}
+} */
 
-.list-item{
+/* .list-item{
     display: inline-block;
 }
 
@@ -185,6 +229,15 @@ main {
     text-align: center;
     padding: 1rem;
     text-decoration: none;
+} */
+
+.background-hotel-img{
+    width: 100%;
+    height: 100%;
+    width: 30.6rem;
+    height: 30.6rem;
+    border-radius: 1rem;
+    background-size: cover;
 }
 
 
@@ -194,6 +247,7 @@ main {
     max-width: 30.6rem;
     max-height: 30.6rem;
     border-radius: 1rem;
+    /* background-size: cover; */
     object-fit: cover;
 }
 
@@ -201,6 +255,7 @@ main {
     display: flex;
     flex-direction: column;
     align-self: center;
+    justify-content: center;
 }
 
 .hotel-name{
@@ -208,6 +263,9 @@ main {
     color: rgb(54, 54, 54);
     line-height: 2.2rem;
     padding-top: .5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
