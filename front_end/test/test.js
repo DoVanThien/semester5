@@ -28,8 +28,8 @@ function getImages(){
             });
         }
         hotel.innerHTML = html;
-        return data;
     });
+    console.log("clicked");
 }
 
-export default getImages;
+// export default getImages;
